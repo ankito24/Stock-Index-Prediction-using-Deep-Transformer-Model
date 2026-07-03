@@ -113,13 +113,7 @@ for every model — this matches Table 4 in the paper.
 
 ---
 
-## 5. Notes / tips for your submission
 
-- If you're short on time, run with `--epochs 100-300`; results will still show
-  the Transformer outperforming CNN/RNN in most cases, just with looser convergence
-  than the paper's 1000-epoch runs.
-- If `yfinance` download fails (network/rate-limit issues), retry after a minute,
-  or reduce the date range in `data_utils.py`'s `prepare_dataset()` call.
 - GPU is optional — training auto-detects CUDA (`train_model` picks `cuda` if
   available, else falls back to CPU).
 - To match the paper's exact architecture more closely (multiple random seeds,
